@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap');
+
+html{font-size: 10px;}
+
+body{
+    margin: 130px; 
+    font-family: 'Raleway', sans-serif;
+    background-color: gray;
+}
+
+.diversityF{
+    position: absolute;
+    font-size: 15rem;
+    color: whitesmoke;
+    text-align: center;
+    top: 1;
+    width: 100%;
+    animation-name: colorChange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+    0% {color: rgb(247, 154, 154);}
+    
+    
+    
+    20% {color: #1abc9c;}
+    
+    
+    
+    40% {color: rgb(255, 93, 93);}
+    
+    
+    
+    60% {color: rgb(106, 190, 113);}
+    
+    
+
+    80% {color: #f1c40f;}
+    
+    
+    
+    100% {color: rgb(247, 154, 154);}
+}
+
+.beerF{
+    position: absolute;
+    font-size: 5rem;
+    color: whitesmoke;
+    text-align: center;
+    top: 92%;
+    width: 100%;
+    animation-name: color;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes color {
+    0% {color: #f1c40f;}
+    
+    
+    
+    20% {color: white;}
+    
+    
+    
+    40% {color: rgb(32, 66, 255);}
+    
+    
+    
+    60% {color: rgb(103, 82, 136);}
+    
+    
+
+    80% {color: pink;}
+    
+    
+    
+    100% {color: #f1c40f;}
+}
+
+.container{
+    width: 1024px;
+    height: 1200px;
+    border: 1px solid none;
+    margin: 20px auto;
+    position: relative;
+}
+.boxOne{
+    width: 1024px;
+    height: 1200px;
+    background-color: none;
+    position: absolute;
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);  
+}
+
+
+
+.boxTwo{
+    width: 1024px;
+    height: 1200px;
+    background-color: none;
+    position: absolute;
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+}
+
+
+
+.boxThree{
+    width: 1024px;
+    height: 1200px;
+    background-color: none;
+    position: absolute;
+    clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    animation-name: toRight;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out; 
+}
+
+@keyframes toRight {
+    from {
+        clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    }
+
+    11%{
+        clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    }
+
+    25% {
+        clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    }
+
+    37.5%{
+        clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    }
+
+    50% {
+        clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    }
+
+    62.5%{
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+
+    75% {
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    }
+
+    87.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+
+    to {
+        clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    }
+   
+}
+
+.boxFour{
+    width: 1024px;
+    height: 1200px;
+    background-color: none;
+    position: absolute;
+    clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    animation-name: toUp;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out; 
+}
+
+@keyframes toUp {
+    from {
+        clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    }
+
+    12.5%{
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 0 50%);
+    }
+
+    25% {
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    }
+
+    37.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+
+    50% {
+        clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    }
+
+    62.5%{
+        clip-path: polygon(0 100%, 50% 100%, 50% 100%, 0 100%);
+    }
+
+    62.6%{
+        clip-path: polygon(50% 100%, 100% 100%, 100% 100%, 50% 100%);
+    }
+
+    75% {
+        clip-path: polygon(50% 50%, 100% 50%, 100% 100%, 50% 100%);
+    }
+
+    87.5%{
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+    }
+
+    to {
+        clip-path: polygon(50% 0, 100% 0, 100% 50%, 50% 50%);
+    }
+   
+}
+
+.boxFive{
+    width: 1024px;
+    height: 1200px;
+    background-color: none;
+    position: absolute;
+    clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    animation-name: toPop;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out; 
+}
+
+@keyframes toPop {
+    from {
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    }
+
+    25%{
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    }
+
+    37.5%{
+        clip-path: polygon(0 50%, 0% 50%, 0% 100%, 0 100%);
+    }
+
+    62.5% {
+        clip-path: polygon(0 50%, 0% 50%, 0% 100%, 0 100%);
+    }
+
+    75% {
+        clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0 100%);
+    }
+
+    87.5%{
+        clip-path: polygon(0 0, 50% 0, 50% 100%, 0 100%);
+    }
+
+    to {
+        clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+    }
+   
+}
